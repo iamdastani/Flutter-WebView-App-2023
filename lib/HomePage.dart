@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body : SafeArea (
       child: WebView(
-       initialUrl: 'https://beiizetu.shop',
+       initialUrl: 'https://onlinesoln1.com',
        javascriptMode: JavascriptMode.unrestricted,
       onWebViewCreated: (WebViewController controller) {
         _controller = controller;
