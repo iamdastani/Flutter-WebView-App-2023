@@ -13,11 +13,14 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return WebView(
-       initialUrl: 'https://wesetupit.beiizetu.com',
+    return Scaffold(
+      body : SafeArea (
+      child: WebView(
+       initialUrl: 'https://m.youtube.com',
+       javascriptMode: JavascriptMode.unrestricted,
       onWebViewCreated: (WebViewController controller) {
         _controller = controller;
       },
-    );
+    ),),);
   }
 }
