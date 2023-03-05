@@ -14,7 +14,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return WebView(
-       initialUrl: 'https://www.google.com',
+       initialUrl: 'https://wesetupit.beiizetu.com',
       onWebViewCreated: (WebViewController controller) {
         _controller = controller;
       },
