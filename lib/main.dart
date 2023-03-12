@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:webview_flutter/webview_flutter.dart';
-import 'HomePage.dart';
+import 'splash_screen.dart';
+import 'package:flutter/services.dart';
+import 'dart:ui';
+
+
 
 void main() {
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent
+  ));
   runApp(const MyApp());
 }
 
@@ -18,7 +24,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: HomePage(),
+        home: SplashScreen(),
         );
   }
 }
